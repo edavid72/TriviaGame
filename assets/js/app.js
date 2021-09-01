@@ -70,12 +70,13 @@ const showQuestions = () => {
     </div>
     `;
   } else {
+    container.style.display = 'none';
     qContainer.innerHTML = `
     <div class="container questions_js">
     <h3 class="title_questions">${questions[q].question}</h3>
     <ul class="flex questions_list">
-    <li><button onClick="checkAnswer(this)">${questions[q].correct_answer}</button></li>
-    <li><button onClick="checkAnswer(this)">${questions[q].incorrect_answers[0]}</button></li>
+    <li><button class="q_js" onClick="checkAnswer(this)">${questions[q].correct_answer}</button></li>
+    <li><button class="q_js" onClick="checkAnswer(this)">${questions[q].incorrect_answers[0]}</button></li>
     </ul>
     </div>
     `;

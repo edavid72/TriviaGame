@@ -78,7 +78,7 @@
 
     .home h1 {
         padding: 2rem;
-        font-size: 9rem;
+        font-size: 7rem;
     }
 
     .buttons {
@@ -93,7 +93,7 @@
         justify-content: center;
         padding: 1rem;
         border-radius: 10px;
-        font-size: 4rem;
+        font-size: 3rem;
         background-color: var(--text-white);
         color: var(--text-dark);
         margin-top: 1rem;
@@ -105,7 +105,7 @@
         justify-content: center;
         padding: 1rem;
         border-radius: 10px;
-        font-size: 4rem;
+        font-size: 3rem;
         background-color: #FFF338;
         color: var(--text-dark);
         margin-top: 1rem;
@@ -151,7 +151,7 @@
 
     .form {
         font-family: var(--font01);
-        padding: 8rem;
+        padding: 2rem;
         width: 50%;
         flex-direction: column;
     }
@@ -189,9 +189,10 @@
 
 /* style of JS generated questions */
 .title_questions {
+    text-align: center;
     width: 80%;
     color: var(--text-dark);
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: var(--font01);
     padding: 2rem;
 }
@@ -209,7 +210,7 @@
     border-radius: 12px;
     border: solid var(--text-white) 5px;
     font-family: var(--font01);
-    font-size: 2.5rem;
+    font-size: 2rem;
 
     /* BoxShadow */
     box-shadow: -1px 5px 5px 0px rgba(62, 69, 77, 0.75);
@@ -239,15 +240,15 @@
 
 .results_score h2 {
     padding: 4rem;
-    font-size: 8rem;
+    font-size: 6rem;
     color: var(--text-dark);
-    font-family: var(--font01)  ;
+    font-family: var(--font01);
 }
 
 .results_score h3 {
     padding: 2rem;
     font-family: var(--font01);
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--text-white);
 }
 
