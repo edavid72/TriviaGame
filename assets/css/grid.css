@@ -1,0 +1,77 @@
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.aling-center {
+    align-items: center;
+}
+
+
+/* Grid with Flexbox */
+.col-12 {
+    width: 100%;
+}
+
+.col-11 {
+    width: 91.66667%;
+}
+
+.col-10 {
+    width: 83.33333%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-8 {
+    width: 66.66666%;
+}
+
+.col-7 {
+    width: 58.33333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-5 {
+    width: 41.66666%;
+}
+
+.col-4 {
+    width: 33.33333%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 16.66666;
+}
+
+.col-1 {
+    width: 8.33333%;
+}

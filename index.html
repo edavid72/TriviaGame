@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/resets.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div id="home" class="home flex column">
+            <!-- Principal Title -->
+            <h1>Are you ready for this?</h1>
+
+            <!-- Form API Trivia -->
+            <form action="" id="form_api" class="form_api">
+
+                <!-- Input/Select Form API Trivia -->
+                <div class="form flex">
+                    <!--Section-01-->
+                    <div class="form_section">
+                        <label for="trivia_amount">Number of Questions:</label>
+                        <input type="number" id="trivia_amount" min="1" max="50" class="input_trivia" value="4"
+                            placeholder="Number of Questions">
+                    </div>
+                    <!--end-->
+
+                    <!--Section-02-->
+                    <div class="form_section">
+                        <label for="trivia_category">Select Category:</label>
+                        <select name="trivia_category" id="trivia_category" class="select_trivia">
+                            <!-- <option disabled selected value="">---- Select ----</option> -->
+                            <option value="0">Any Category</option>
+                            <option value="9">General Knowledge</option>
+                            <option value="10">Entertainment: Books</option>
+                            <option value="11">Entertainment: Film</option>
+                            <option value="12">Entertainment: Music</option>
+                            <option value="13">Entertainment: Musicals & Theatres</option>
+                            <option value="14">Entertainment: Television</option>
+                            <option value="15">Entertainment: Video Games</option>
+                            <option value="16">Entertainment: Board Games</option>
+                            <option value="17">Science & Nature</option>
+                            <option value="18">Science: Computers</option>
+                            <option value="19">Science: Mathematics</option>
+                            <option value="20">Mythology</option>
+                            <option value="21">Sports</option>
+                            <option value="22">Geography</option>
+                            <option value="23">History</option>
+                            <option value="24">Politics</option>
+                            <option value="25">Art</option>
+                            <option value="26">Celebrities</option>
+                            <option value="27">Animals</option>
+                            <option value="28">Vehicles</option>
+                            <option value="29">Entertainment: Comics</option>
+                            <option value="30">Science: Gadgets</option>
+                            <option value="31">Entertainment: Japenese Anime & Manga</option>
+                            <option value="32">Entertainment: Cartoon & Animations</option>
+                        </select>
+                    </div>
+                    <!--end-->
+
+                    <!--Section-03-->
+                    <div class="form_section">
+                        <label for="trivia_difficulty">Select Difficulty:</label>
+                        <select name="trivia_difficulty" id="trivia_difficulty" class="select_trivia">
+                            <!-- <option disabled selected value="">---- Select ----</option> -->
+                            <option value="0">Any Difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <!--end-->
+
+                    <!--Section-04-->
+                    <div class="form_section">
+                        <label for="trivia_type">Select Type:</label>
+                        <select name="trivia_type" id="trivia_type" class="select_trivia">
+                            <!-- <option disabled selected value="">---- Select ----</option> -->
+                            <option value="0">Any Type</option>
+                            <option value="multiple">Multiple Choice</option>
+                            <option value="boolean">True / False</option>
+                        </select>
+                    </div>
+                    <!--end-->
+
+                    <!--Section-05-->
+                    <!-- <div class="form_section">
+                        <label for="trivia_encode">Select Encoding:</label>
+                        <select name="trivia_encode" id="trivia_encode" class="select_trivia">
+                            <option value="default">Default Encoding</option>
+                            <option value="urlLegacy">Legacy URL Encoding</option>
+                            <option value="url3986">URL Encoding (RFC 3986)</option>
+                            <option value="base64">Base64 Encoding</option>
+                        </select>
+                    </div> -->
+                    <!--end-->
+                </div>
+                <!--end-->
+
+                <!-- Buttons to send request to the API -->
+                <div class="buttons flex column">
+                    <input type="submit" class="btn" value="Play">
+
+                    <a href="#" class="btn">High Score<i class="fas fa-trophy"></i></a>
+                </div>
+                <!--end-->
+
+            </form>
+        </div>
+    </div>
+
+    <div id="question_container"></div>
+
+    <div id="results_score"></div>
+
+
+
+
+    <!-- Javascript -->
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>
